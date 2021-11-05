@@ -26,7 +26,7 @@ const feed = [
         "data" : "4 mesi fa",
         "text" : "un paragrafo con scritto qualcosa di molto lungo dentro un tag p",
         "img" : "",
-        "likes" : 80
+        "likes" : 35
     },
     {
         "nome" : "Phill Mangione",
@@ -34,7 +34,7 @@ const feed = [
         "data" : "4 mesi fa",
         "text" : "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
         "img" : "https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Funsplash.it%2F600%2F300%3Fimage%3D171",
-        "likes" : 80
+        "likes" : 68
     }
 ]
 
@@ -77,7 +77,7 @@ container.innerHTML += `
 `
 }
 
-// al click coloro il tasto e aumento di uno i like
+// al click coloro il tasto e aumento di uno i like 
 const like = document.querySelectorAll(".like-button")
 console.log(like);
 for (let i = 0; i < like.length; i++){
