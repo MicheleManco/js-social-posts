@@ -63,7 +63,7 @@ container.innerHTML += `
             <div class="post__footer">
                 <div class="likes js-likes">
                     <div class="likes__cta">
-                        <a class="like-button  js-like-button" href="#" data-postid="1">
+                        <a class="like-button  js-like-button"  data-postid="1">
                             <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>
                             <span class="like-button__label">Mi Piace</span>
                         </a>
@@ -80,13 +80,13 @@ container.innerHTML += `
 // al click coloro il tasto e aumento di uno i like
 const like = document.querySelectorAll(".like-button")
 console.log(like);
-for (let i = 0; i < like.length; i++)
+for (let i = 0; i < like.length; i++){
 like[i].addEventListener("click",
 function (){
-    like[i].classList.add("like-button--liked")
-    likes = feed[i].likes + 1;
-    console.log("click",likes);
+    like[i].classList.add("like-button--liked");
+    let counterLikes = document.getElementsByClassName("js-likes-counter");
+    counterLikes[i].innerHTML = feed[i].likes + 1;
+    console.log("click",counterLikes);
 }
 )
-
-
+}
